@@ -1,4 +1,4 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+![Screenshot 2025-04-23 212103](https://github.com/user-attachments/assets/87a9fefe-7981-4281-8cb2-6269cc9ca253)
 
 **AIM:**
 
@@ -18,6 +18,16 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Logic Diagram**
 
+FUNCTION 1 K-MAP:
+
+![Screenshot 2025-04-23 212204](https://github.com/user-attachments/assets/fff474d9-6fe1-424d-b5ba-b6444c8f593c)
+
+FUNCTION 2 K-MAP:
+
+![Screenshot 2025-04-23 212216](https://github.com/user-attachments/assets/06f8cb51-f033-47fb-b4e9-b55ff6adcfe4)
+
+
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -33,10 +43,42 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
 
-Developed by: RegisterNumber:*/
+ FUNCTION 1:
 
+ module function1(a,b,c,d,f1);
+ input a,b,c,d;
+ output f1;
+ assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+ endmodule
+
+ FUCTION 2:
+
+ module funct2(w,x,y,z,f2);
+ input w,x,y,z;
+ output f2;
+ assign f2=((~y & z)|( w & y )|(x & y));
+ endmodule
+
+```
+
+FUNCTION 1:
+
+
+![Screenshot 2024-12-08 214517](https://github.com/user-attachments/assets/1d07ede7-c7f7-4db2-9509-d8120929dc72)
+
+FUNCTION 2:
+
+![Screenshot 2024-12-08 214526](https://github.com/user-attachments/assets/3042b310-372a-406a-81c5-f9e8967a2b33)
+
+
+```
+
+Developed by:AVINASH K
+RegisterNumber:24901328
+
+```
 
 **RTL realization**
 
@@ -44,7 +86,25 @@ Developed by: RegisterNumber:*/
 
 **RTL**
 
+FUNCTION 1:
+
+![Screenshot 2024-12-08 214718](https://github.com/user-attachments/assets/2f9524a5-b738-4af8-b4f2-2836902b789a)
+
+FUNCTION 2:
+
+![Screenshot 2024-12-08 214722](https://github.com/user-attachments/assets/4ff42f59-5c9b-444f-94c9-2b4100f09b86)
+
+
 **Timing Diagram**
+
+FUNCTION 1:
+
+![Screenshot 2024-12-08 214851](https://github.com/user-attachments/assets/1ca11228-6830-4995-9d45-1a0de0093cea)
+
+
+FUNCTION 2:
+
+![Screenshot 2024-12-08 214900](https://github.com/user-attachments/assets/fe854bb8-d7a7-44fb-9869-14b0b571d16f)
 
 **Result:**
 
